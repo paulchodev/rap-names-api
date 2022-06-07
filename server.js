@@ -14,6 +14,41 @@ const rappers ={
         'BirthName': 'Chancellor Bennett',
         'birthLocation': 'Chicago, Illinois'
     },
+    'eminem':{
+        'age': 49,
+        'BirthName': 'Marshall Bruce Mathers III,',
+        'birthLocation': 'Saint Joseph, Michigan'
+    },
+    'kendrick lamar':{
+        'age': 34,
+        'BirthName': 'Kendrick Lamar Duckworth',
+        'birthLocation': 'Compton, California'
+    },
+    'snoop dogg':{
+        'age': 50,
+        'BirthName': 'Calvin Cordozar Broadus Jr.',
+        'birthLocation': 'Long Beach, California'
+    },
+    'drake':{
+        'age': 35,
+        'BirthName': 'Aubrey Drake Graham',
+        'birthLocation': 'Toronto, Canada'
+    },
+    'jay-z':{
+        'age': 52,
+        'BirthName': 'Shawn Corey Carter',
+        'birthLocation': 'Brooklyn, New York'
+    },
+    'dr. dre':{
+        'age': 57,
+        'BirthName': 'Andre Romelle Young',
+        'birthLocation': 'Compton, California'
+    },
+    'dr. dre':{
+        'age': 57,
+        'BirthName': 'Andre Romelle Young',
+        'birthLocation': 'Compton, California'
+    },
     'unknown':{
         'age': 0,
         'BirthName': 'unknown',
@@ -34,6 +69,6 @@ app.get('/api/:name',(req,res)=>{
     }
 })
 
-app.listen(PORT , ()=>{
+app.listen(process.env.PORT || PORT , ()=>{
     console.log(`The server is now running on port ${PORT}! Betta go catch it!`)
 })
